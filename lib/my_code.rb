@@ -10,7 +10,6 @@ def map_to_negativize(source_array)
 end
 
 def map_to_no_change(source_array)
-  unchanged_array = []
-  unchanged_array << source_array
+  unchanged_array = source_array
   unchanged_array
 end
