@@ -41,7 +41,7 @@ end
 # reducing methods
 
 def reduce_to_total(source_array, starting_point)
-  total = 0 
+  total = starting_point 
   i = 0 
   if starting_point
     i += starting_point
