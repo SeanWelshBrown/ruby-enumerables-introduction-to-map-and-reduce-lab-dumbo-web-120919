@@ -1,3 +1,5 @@
+# mapping methods
+
 def map_to_negativize(source_array)
   negative_array = []
   i = 0 
@@ -36,3 +38,21 @@ def map_to_square(source_array)
   squared_array
 end
 
+# reducing methods
+
+def reduce_to_total(source_array, starting_point)
+  total = 0 
+  i = 0 
+  if starting_point
+    i += starting_point
+  end
+  while i < source_array.length do 
+    total += source_array[i]
+    i += 1 
+  end
+  total
+end
+  
+  
+  
+  
