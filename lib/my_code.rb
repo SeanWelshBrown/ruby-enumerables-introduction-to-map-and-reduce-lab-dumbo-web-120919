@@ -52,6 +52,25 @@ def reduce_to_total(source_array, starting_point = nil)
   end
   total
 end
+
+def reduce_to_all_true(source_array)
+  truth_check = 0 
+  i = 0 
+  while i < source_array.length do 
+    if source_array[i]
+      truth_check += 1 
+      i += 1 
+    else
+      i += 1
+    end
+  end
+  
+  if truth_check == source_array.length
+    return true 
+  else
+    return false 
+
+end
   
   
   
